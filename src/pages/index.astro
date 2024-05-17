@@ -1,0 +1,95 @@
+---
+import MainVideo from "../components/MainVideo.astro";
+import SmallVideo from "../components/SmallVideo.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Loud Game Audio">
+  <div>
+    <h1
+      class="my-8 text-white text-center text-4xl font-bold leading-tight text-semantic-on-surface-variant sm:my-10 sm:text-5xl md:my-12 md:text-6xl lg:my-16 lg:text-7xl"
+    >
+      Loud Game Audio
+    </h1>
+    <MainVideo />
+    <div class="mt-8 flex w-full flex-row flex-wrap">
+      <div class="w-full p-2 md:w-1/2">
+        <SmallVideo videoId="WSrEiMHRSug" />
+      </div>
+      <div class="w-full p-2 md:w-1/2">
+        <SmallVideo videoId="rJwWMd3pJVs" />
+      </div>
+    </div>
+    <div
+      class="mt-4 flex w-full flex-col items-center rounded-xl border-4 border-semantic-on-surface-variant p-4 sm:flex-col sm:items-center sm:justify-center md:flex-row"
+    >
+      <div class="flex w-full items-center justify-center p-4 md:w-1/2">
+        <img
+          src="https://i.ibb.co/NSCfswz/jose-lga.png"
+          alt="Jose Angulo CEO from Loud Game Audio"
+          class="max-h-64 rounded-xl object-contain sm:max-h-80"
+        />
+      </div>
+      <div
+        class="mx-auto flex w-full flex-col justify-between items-center sm:w-full sm:items-center sm:pt-3 md:w-1/2 md:pl-8"
+      >
+        <div class="flex h-full flex-col items-center sm:items-center">
+          <p
+            class="text-xl text-white font-bold text-semantic-on-surface-variant text-center"
+          >
+            {`Jose Luis Angulo`}
+          </p>
+          <div class="py-4 text-semantic-on-surface-variant text-center">
+            <p class="py-2 text-white sm:text-center sm:text-sm">
+              Technical Sound Designer
+            </p>
+            <p class="py-2 text-white sm:text-center sm:text-sm">
+              Unreal Engine Game Developer
+            </p>
+          </div>
+          <div
+            class="text-white flex items-center justify-center gap-2 pt-3 text-2xl text-semantic-on-surface-variant md:mb-0 md:mt-auto"
+          >
+            <span class="text-xs">Connect:</span>
+            <a
+              href="https://youtube.com"
+              title="LinkedIn"
+              class="block w-4 h-4 transform transition-transform duration-300 ease-in-out hover:scale-125"
+            >
+              <img
+                src="../../public/linkedin.svg"
+                alt="LinkedIn"
+                class="w-full h-full filter invert-0 transition duration-300 ease-in-out hover:invert-0"
+                style="filter: brightness(0) invert(1);"
+              />
+            </a>
+            <a
+              href="https://youtube.com"
+              title="LinkedIn"
+              class="block w-4 h-4 transform transition-transform duration-300 ease-in-out hover:scale-125"
+            >
+              <img
+                src="../../public/youtube.svg"
+                alt="LinkedIn"
+                class="w-full h-full filter invert-0 transition duration-300 ease-in-out hover:invert-0"
+                style="filter: brightness(0) invert(1);"
+              />
+            </a>
+            <a
+              href="https://youtube.com"
+              title="LinkedIn"
+              class="block w-4 h-4 transform transition-transform duration-300 ease-in-out hover:scale-125"
+            >
+              <img
+                src="../../public/instagram.svg"
+                alt="LinkedIn"
+                class="w-full h-full filter invert-0 transition duration-300 ease-in-out hover:invert-0"
+                style="filter: brightness(0) invert(1);"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
